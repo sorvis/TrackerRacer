@@ -1,5 +1,6 @@
 class LanesController < ApplicationController
   before_action :set_lane, only: [:show, :edit, :update, :destroy]
+  protect_from_forgery :except => [:create]
 
   # GET /lanes
   # GET /lanes.json
