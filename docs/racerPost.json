@@ -1,0 +1,13 @@
+    {
+            "event": "WINNER",
+                  "url": "https://frozen-everglades-28638.herokuapp.com/lanes/new",
+                                          "requestType": "POST",
+                                                "form": null,
+                                                      "headers": null,
+                                                            "query": null,
+                                                                  "json": {"name": "#name",
+                                                                            "place": "#place" },
+                                                                        "auth": null,
+                                                                              "responseTemplate": null
+                                                                                        }
+
