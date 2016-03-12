@@ -12,10 +12,11 @@
   </thead>
 
   <tbody>
-    <% @lanes.each do |lane| %>
+    <% @lanes.order('lanes.created_at DESC').each do |lane| %>
       <tr>
         <td><%= lane.name %></td>
         <td><%= lane.place %></td>
+        <td><%= lane.created_at.strftime("%B %d at %I:%M %p") %></td>
         <td><%= link_to 'Show', lane %></td>
         <td><%= link_to 'Edit', edit_lane_path(lane) %></td>
         <td><%= link_to 'Destroy', lane, method: :delete, data: { confirm: 'Are you sure?' } %></td>
